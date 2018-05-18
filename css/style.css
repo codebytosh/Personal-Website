@@ -1,0 +1,907 @@
+/* ==============================
+    Default Theme
+--------------------------------
+
+Fonts: Raleway and Open Sans
+
+============================== */
+
+/* ----------------------------
+        Preloader, TypeIt
+-------------------------------- */
+
+#preloader {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+}
+
+#status {
+    background-image: url("../img/gif/Pacman.gif");
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+}
+
+
+/* ----------------------------
+        HTML, Body
+-------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.row {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.section {
+    width: 100%;
+    margin-bottom: 60px;
+    overflow-x: hidden;
+}
+
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#sections {
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.projects {
+    background: #fafafa;
+}
+
+.work {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: black;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+
+/* ----------------------------
+            Home
+-------------------------------- */
+
+header {
+    background: white;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    -webkit-background-size: cover;
+    width: 100%;
+
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+    left: 40px;
+    padding-bottom: 200px;
+}
+
+#typeItIntro {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    margin-left: 5%;
+}
+
+#home-content-icons {
+    margin-top: 50px;
+    font-size: 40px;
+    padding-right: 90px;
+}
+
+.buttons {
+    margin-left: 125px;
+    margin-top: 50px;
+    color: black;
+}
+
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    font-size: 40px;
+    bottom: 20px;
+
+}
+
+
+/* ----------------------------
+    Header Icon Hover Effects 
+-------------------------------- */
+
+.buttons {
+    animation: btn 5s 1;
+}
+
+
+
+@keyframes btn {
+    0% {
+        color: transparent;
+        background-color: transparent;
+        color: transparent;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+    }
+    30% {
+        color: transparent;
+        background-color: .4;
+        border: 1px solid transparent;
+        margin-bottom: 125px;
+    }
+    85% {
+        margin-bottom: 20px;
+    }
+}
+
+
+.buttons:link,
+.buttons:visited {
+    border: 1px solid transparent;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.buttons:hover,
+.buttons:active {
+    border: 1px solid transparent;
+    color: #5cbdaa;
+    background-color: transparent;
+}
+
+#arrow-down {
+    animation: down 4s 1;
+}
+
+@keyframes down {
+    0% {
+        color: transparent;
+        background-color: transparent;
+        color: transparent;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+    }
+    30% {
+        color: transparent;
+        background-color: .4;
+        border: 1px solid transparent;
+        margin-bottom: 125px;
+    }
+    85% {
+        margin-bottom: 0px;
+    }
+}
+
+
+#arrow-down:link,
+#arrow-down:visited {
+    border: 1px solid transparent;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+
+#arrow-down:hover,
+#arrow-down:active {
+    border: 1px solid transparent;
+    color: #5cbdaa;
+    background-color: transparent;
+}
+
+/* ----------------------------
+            Projects
+-------------------------------- */
+
+#projects {
+    background-color: #f2f2f2;
+}
+
+#project-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    padding-top: 80px;
+}
+
+
+.project-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.project-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    margin-bottom: 60px;
+}
+
+.project-img {
+    width: 100%;
+    margin-top: 80px
+}
+
+.project-img img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(0.8);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.project-img img:hover {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* ----------------------------
+            Work
+-------------------------------- */
+
+#work {
+    background-color: white;
+}
+
+#work-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    padding-top: 50px;
+}
+
+.text {
+    padding-top: 50px;
+}
+
+.work-img {
+    margin-left: 54%;
+    margin-top: 4%;
+    padding-top: 40px;
+}
+
+
+
+.work-img img {
+    opacity: 1.0;
+    transform: scale(1.0);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.work-img img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.Text {
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.company {
+    font-family: 'Raleway';
+    font-size: 175%;
+    font-weight: 300;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    color: #3894ff;
+}
+
+.job {
+    color: #5cbdaa;
+    font-size: 110%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.location {
+    color: #3e3e3e;
+    font-size: 110%;
+    font-weight: 400;
+    word-spacing: 2px;
+}
+
+.description {
+    color: black;
+    font-size: 105%;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+
+
+/* ----------------------------
+            About
+-------------------------------- */
+
+#about {
+    background-color: #f2f2f2;
+}
+
+
+#about-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    padding-top: 80px;
+}
+
+
+.aboutMe {
+    font-size: 140%;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.title {
+    font-size: 150%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #3894ff;
+    margin-top: 5%;
+}
+
+.blogType {
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#blog2 {
+    padding-bottom: 60px;
+}
+
+.aboutText {
+    color: black;
+    font-size: 105%;
+    font-weight: 300;
+    word-spacing: 2px;
+    margin-top: 5%;
+}
+
+.picture {
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 325px;
+    width: 57%;
+}
+
+.button {
+    margin-top: 20%;
+}
+
+.button:link,
+.button:visited {
+    display: inline-block;
+    padding: 8px 8px;
+    font-weight: 200;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 15px;
+}
+
+.cornyBTN:link,
+.cornyBTN:visited {
+    background-color: #2ecc71;
+    border: 1px solid #2ecc71;
+    color: #fff;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.cornyBTN:hover,
+.cornyBTN:active {
+    border: 1px solid #5cbdaa;
+    color: #fff;
+    background-color: #5cbdaa;
+}
+
+
+
+
+
+/* ----------------------------
+            Footer
+-------------------------------- */
+
+.connect {
+    text-align: center;
+    color: black;
+    font-size: 155%;
+    font-weight: 300;
+    word-spacing: 2px;
+    margin-top: 2%;
+
+}
+
+.bribe {
+    font-size: 155%;
+    font-weight: 300;
+    bottom: 60px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.icon-connect {
+    text-align: center;
+}
+
+.cBTN {
+    padding: 0px 40px;
+    font-size: 400%;
+}
+
+
+
+/* ----------------------------
+        Navigation
+-------------------------------- */
+
+.white-nav-top .navbar {
+    padding: 35px 0 20px 0;
+
+}
+
+.white-nav-top .site-nav-wrapper {
+    padding: 20px 0px;
+}
+
+
+.white-nav-top ul.navbar-nav > li > a {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 300px;
+    background: none;
+
+}
+
+.white-nav-top #name {
+    margin-right: 270px;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 300px;
+}
+
+
+.white-nav-top ul.navbar-nav > li > a:link,
+.white-nav-top ul.navbar-nav > li > a:visited {
+    border: 1px solid transparent;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+
+}
+
+
+.white-nav-top ul.navbar-nav > li > a:hover,
+.white-nav-top ul.navbar-nav > li > a:active {
+    border: 1px solid transparent;
+    color: #5cbdaa;
+    background-color: transparent;
+    background: none;
+}
+
+.white-nav-top {
+    background: white;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    box-shadow: 0 1px 5px 1px #999;
+    z-index: 2;
+}
+
+
+
+
+/* ----------------------------
+            Media Query
+-------------------------------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+
+    /* ----------------------------
+            Home
+-------------------------------- */
+    header {
+        background: white;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        -webkit-background-size: cover;
+        width: 100%;
+
+    }
+
+    #home-content {
+        width: 100%;
+        height: 100%;
+        display: table;
+    }
+
+    #home-content-inner {
+        display: table-cell;
+        vertical-align: middle;
+        left: 40px;
+        padding-bottom: 200px;
+    }
+
+    #typeItIntro {
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        margin-left: 5%;
+    }
+
+    #home-content-icons {
+
+        padding: 0px 90px;
+        font-size: 300%;
+        margin-left: -36%;
+
+    }
+
+    .buttons {
+
+        color: black;
+
+    }
+
+
+    #arrow-down {
+        position: absolute;
+        left: 50%;
+        font-size: 25px;
+        bottom: 20px;
+        display: none;
+
+
+    }
+
+
+
+
+/* ----------------------------
+            Projects
+-------------------------------- */
+    #projects {
+        display: none;
+    }
+
+
+
+ /* ----------------------------
+            Work
+-------------------------------- */
+    #work {
+        background-color: #f7f4f4;
+    }
+
+    #work-title {
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    .text {
+        padding-top: 50px;
+    }
+
+    .work-img {
+        margin-left: 5%;
+        margin-top: 4%;
+        padding-top: 40px;
+    }
+
+
+
+    .work-img img {
+        opacity: 1.0;
+        transform: scale(1.0);
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+    .work-img img:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    .Text {
+        margin-right: 3%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .company {
+        font-family: 'Raleway';
+        font-size: 175%;
+        font-weight: 300;
+        letter-spacing: 0px;
+        word-spacing: 1px;
+        color: #3894ff;
+
+    }
+
+    .job {
+        color: #5cbdaa;
+        font-size: 110%;
+        font-weight: 400;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+
+    .location {
+        color: #3e3e3e;
+        font-size: 110%;
+        font-weight: 400;
+        word-spacing: 2px;
+    }
+
+    .description {
+        color: black;
+        font-size: 105%;
+        font-weight: 300;
+        word-spacing: 2px;
+    }
+
+
+
+
+
+    /* ----------------------------
+            About
+-------------------------------- */
+    #about {
+        background-color: white;
+        display: none;
+    }
+
+
+    #about-title {
+        font-family: "Raleway", sans-serif;
+        font-size: 25px;
+        display: none;
+
+    }
+
+
+    .aboutMe {
+        font-size: 140%;
+        font-weight: 300;
+        word-spacing: 2px;
+        text-align: center;
+
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .title {
+        font-size: 150%;
+        font-weight: 500;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: #3894ff;
+
+        display: none;
+    }
+
+    .blogType {
+        margin-left: 30%;
+        margin-top: 10%;
+        display: none;
+    }
+
+
+    #blog2 {
+        padding-bottom: 60px;
+        display: none;
+    }
+
+    .aboutText {
+        color: black;
+        font-size: 105%;
+        font-weight: 300;
+        word-spacing: 2px;
+        margin-top: 5%;
+        display: none;
+    }
+
+    .picture {
+        margin-left: 10%;
+        margin-top: 10%;
+        height: 325px;
+        width: 57%;
+        display: none;
+    }
+
+    .button {
+        margin-top: 20%;
+        display: none;
+
+
+    }
+
+    .button:link,
+    .button:visited {
+        display: inline-block;
+        padding: 8px 8px;
+        font-weight: 200;
+        text-decoration: none;
+        border-radius: 100px;
+        font-size: 15px;
+        display: none;
+
+    }
+
+    .cornyBTN:link,
+    .cornyBTN:visited {
+        background-color: #2ecc71;
+        border: 1px solid #2ecc71;
+        color: #fff;
+        margin-right: 25px;
+        margin-top: 10px;
+        display: none;
+
+    }
+
+    .cornyBTN:hover,
+    .cornyBTN:active {
+        border: 1px solid #5cbdaa;
+        color: #fff;
+        background-color: #5cbdaa;
+        display: none;
+
+    }
+
+
+
+    /* ----------------------------
+            Footer
+-------------------------------- */
+    .connect {
+        text-align: center;
+        color: black;
+        font-size: 16px;
+        font-weight: 300;
+        word-spacing: 2px;
+        margin-top: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
+
+    }
+
+    .bribe {
+        font-size: 20px;
+        font-weight: 300;
+        bottom: 60px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .icon-connect {
+        text-align: center;
+    }
+
+    .cBTN {
+        padding: 0px 40px;
+        font-size: 200%;
+    }
+
+
+    /* ----------------------------
+        Navigation
+-------------------------------- */
+    nav {
+        display: none;
+        color: transparent;
+
+    }
+
+    .white-nav-top .navbar {
+        padding: 0px 0 0px 0;
+        display: none;
+        color: transparent;
+    }
+
+    .white-nav-top .site-nav-wrapper {
+        padding: 0px 0px;
+        display: none;
+        color: transparent;
+    }
+
+
+    .white-nav-top ul.navbar-nav > li > a {
+        font-family: "Raleway", sans-serif;
+        color: transparent;
+        font-size: 20px;
+        font-weight: 300px;
+        background: none;
+        display: none;
+
+    }
+
+    .white-nav-top #name {
+
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 300px;
+
+    }
+
+
+    .white-nav-top ul.navbar-nav > li > a:link,
+    .white-nav-top ul.navbar-nav > li > a:visited {
+        border: 0px solid transparent;
+        color: transparent;
+        transition: background-color 0.2s, color 0.2s;
+        display: none;
+
+    }
+
+
+    .white-nav-top ul.navbar-nav > li > a:hover,
+    .white-nav-top ul.navbar-nav > li > a:active {
+        border: 0px solid transparent;
+        color: #5cbdaa;
+        background-color: transparent;
+        background: none;
+        display: none;
+    }
+
+    .white-nav-top {
+        background: transparent;
+        padding: 10px 0;
+        -webkit-box-shadow: 0 8px 6px -9px transparent;
+        box-shadow: 0 1px 5px 1px transparent;
+        z-index: 2;
+        display: none;
+    }
+
+    .buttons {
+        font-size: 15px;
+    }
